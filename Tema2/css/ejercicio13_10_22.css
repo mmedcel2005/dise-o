@@ -1,0 +1,11 @@
+div {
+    height: 9cm;
+    width: 9cm;
+    border-width: 30px;
+    border-style: groove;
+    border-color: red;
+    padding: 20px;
+    background-color: aqua;
+    background-image: url(/Tema2/imagen/fondo.png);
+    margin: 40px;
+}

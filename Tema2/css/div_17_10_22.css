@@ -1,0 +1,30 @@
+#contenedor {
+    width: 900px;
+    height: 400px;
+    margin: auto;
+}
+
+#cabecera {
+    background-color: green;
+    height: 50px;
+    padding: 5px;
+}
+
+#barra-lateral {
+    background-color: orange;
+    float: left;
+    width: 140px;
+    height: 100%;
+}
+
+#contenido {
+    background-color: gray;
+    float: left;
+    width: 740px;
+    height: 100%;
+}
+
+#pie {
+    background-color: blue;
+    clear: both;
+}

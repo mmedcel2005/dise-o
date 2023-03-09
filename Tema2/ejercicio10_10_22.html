@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<htmlxmlns="http://www.w3.org/1999/xhtml">
+<head>
+<metahttp-equiv="Content-Type"content="text/html; charset=iso-8859-1" />
+<title>Ejercicio de selectores</title>
+<styletype="text/css">
+<!-- /* Todos los elementos de la pagina */ -->
+body { font: 1/1.3em Arial, Helvetica, sans-serif; }
+<!-- /* Todos los parrafos de la pagina */ -->
+p { color: #555; }
+<!-- /* Todos los párrafos contenidos en #primero */ -->
+#primero { color: #336699; }
+<!-- /* Todos los enlaces la pagina */ -->
+a { color: #CC3300; }
+<!-- /* Los elementos "em" contenidos en #primero */ -->
+#primero, em{ background: #FFFFCC; padding: .1em; }
+<!-- /* Todos los elementos "em" de clase "especial" en toda la pagina */ -->
+.especial, em{ background: #FFCC99; border: 1px solid #FF9900; padding: .1em; }
+<!-- /* Elementos "span" contenidos en .normal */ -->
+.normal, span{ font-weight: bold; }
+</style>
+</head>
+<body>
+<div id="primero">
+<p>Loremipsum dolor sit amet, <a href="#">consectetueradipiscingelit</a>.
+Praesentblanditnibh at felis.Sednecdiam in dolor vestibulumaliquet. Duisullamcorper,
+nisi non facilisismolestie, <em>loremsemaliquamnulla</em>, id laciniavelit mi
+vestibulumenim.</p>
+</div>
+<div class="normal">
+<p>Phaselluseuvelitsedloremsodalesegestas.Utfeugiat.<span><ahref="#">Donecporttitor</a>,
+magna euvariusluctus,</span>metusmassatristiquemassa, in imperdietestvelitvel magna.
+Phaselluserat.Duisrisus.<ahref="#">Maecenas dictum</a>, nibh vitae pellentesqueauctor,
+tellusvelitconsectetuertellus, temporpretiumfelistellus at metus.</p>
+<p>Cumsociisnatoque<em class="especial">penatibus et magnis</em> dis parturient montes,
+nasceturridiculus mus. Proinaliquamconvallis ante.
+Pellentesquehabitantmorbitristiquesenectus et netus et malesuadafamesacturpisegestas.
+Nunc aliquet. Sed eumetus. Duis justo.</p>
+<p>Donecfacilisisblanditvelit. Vestibulumnisi. Proinvolutpat, <emclass="especial">enim
+id iaculiscongue</em>, orci justo ultrices tortor, <ahref="#">quis lacinia eros libero
+in eros</a>. Sed malesuadaduivelquam. Integer at eros.</p>
+</div>
+</body>
+</html>

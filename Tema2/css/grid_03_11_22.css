@@ -1,0 +1,32 @@
+layout {
+    height: 300px;
+    width: 500px;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    justify-items: strech;
+}
+
+.cell {
+    color: #333;
+    border-radius: 3px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.a {
+    background: Crimson;
+}
+
+.b {
+    background: Khaki;
+}
+
+.c {
+    background: MediumTurquoise;
+}
+
+.d {
+    background: coral;
+}

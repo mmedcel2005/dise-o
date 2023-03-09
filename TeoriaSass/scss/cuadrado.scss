@@ -1,0 +1,13 @@
+@mixin cuadrado{
+    height: 200px;
+    background-color: grey;
+    border-style: dashed;
+}
+
+cuadrado1{
+    @include cuadrado(300px, blue)
+}
+
+cuadrado2{
+    @include cuadrado(150px,grey)
+}

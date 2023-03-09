@@ -1,0 +1,22 @@
+#capa1{
+    width:210px;
+    height:300px;
+    background-color:green;
+    float:left;
+   }
+   #capa2{
+    width:210px;
+    height:300px;
+    background-color:gray;
+    float:left;
+    margin-left:10px;
+   }
+   #capa3{
+    width:430px;
+    height:30px;
+    background-color:orange;
+    float:left;
+    clear:both;
+    margin-top:10px;
+   }
+   

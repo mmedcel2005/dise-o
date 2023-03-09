@@ -1,0 +1,28 @@
+ul.vacio{
+    list-style-type:none;
+    }
+    ul.circulorelleno{
+    list-style-type:disc;
+    }
+    ul.decimal{
+    list-style-type:decimal;
+    }
+    ul.romanominuscula{
+    list-style-type:lower-roman;
+    }
+    ul.romanomayuscula{
+    list-style-type:upper-roman;
+    }
+    ul.circulovacio{
+    list-style-type:circle;
+    }
+    ul.cuadrado{
+    list-style-type:square;
+    }
+    ul.letrasminusculas{
+    list-style-type:lower-alpha;
+    }
+    ul.letrasmayusculas{
+    list-style-type:upper-alpha;
+    } 
+    

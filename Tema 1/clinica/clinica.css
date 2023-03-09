@@ -1,0 +1,53 @@
+#bgColor{
+    background-color:rgba(128, 255, 0, 0.301);
+}
+
+h1{
+    margin-top: 20px;
+}
+
+#imagenLocal{
+    float:left;
+}
+
+
+
+
+#imagenEncabezado{
+    width: 1518px;
+}
+
+table{
+    position: absolute;
+    float: center;
+    margin: 20px;
+    margin-left: 40px;
+    width: 1000px;
+    height: 100px;
+    padding-bottom: 40px;
+   
+}
+
+body{
+    padding-bottom: 40px;
+}
+
+#principal{
+    padding-right: 30px;
+    padding-left: 30px;
+    display: flex;
+    width: 100%;
+}
+
+#divContenido{
+float: left;
+position: relative;
+width: 70%;
+}
+
+
+.tftable {font-size:12px;color:#333333;width: 100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
+.tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
+.tftable tr {background-color:#bedda7;}
+.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a; text-align: center;}
+.tftable tr:hover {background-color:#ffffff;}

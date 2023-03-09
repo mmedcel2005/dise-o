@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<html lang="en">
+
+<head>
+  <title>Navbar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+  <link rel="stylesheet" href="clinica.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm   navbar-light" id="bgColor">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre nosotros</a>
+        </li>
+        <li class="nav-item dropdown dmenu">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Nuestros servicios
+          </a>
+          <div class="dropdown-menu sm-menu">
+            <a class="dropdown-item" href="#">Chequeo geríatrico</a>
+            <a class="dropdown-item" href="#">Urgencias</a>
+            <a class="dropdown-item" href="#">Dermatología</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contactanos</a>
+        </li>
+
+        <!-- <li class="nav-item dropdown dmenu">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu sm-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+              <a class="dropdown-item" href="#">Link 4</a>
+              <a class="dropdown-item" href="#">Link 5</a>
+              <a class="dropdown-item" href="#">Link 6</a>
+            </div>
+          </li> -->
+      </ul>
+      <div class="social-part">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </div>
+    </div>
+  </nav>
+  <img src="imagen/encabezado-clinica.png" alt="encabezado-clinica" id="imagenEncabezado">
+  <div>
+
+    <h1>CENTRO VETERINARIO EN JEREZ</h1>
+    <div id="principal">
+
+
+
+
+
+      <div>
+        <img src="imagen/clinica-veterinaria-jerez.jpg" alt="local-veterinario" id="imagenLocal">
+        <P>Normalmente, cuando visitamos nuestro Centro Veterinario, lo hacemos para vacunar a nuestras mascotas, para
+          exámenes o patologías diarias, enfermedades y afecciones que tienen el carácter de casos clínicos comunes. En
+          estos casos, el diagnóstico y tratamiento de nuestros animales es generalmente común (distinto a las
+          complicaciones que puedan existir) e implica un seguimiento más o menos predeterminado.</P>
+        <p> La Clínica Veterinaria Ronda Este pone a su disposición un equipo humano cualificado con una experiencia de
+          más de 10 años en el diagnóstico, tratamiento, prevención de enfermedades y cirugía de mascotas en Jerez de la
+          Frontera. En nuestra clínica les brindamos un trato personalizado y nos esforzamos para que su mascota pueda
+          recibir todos los requerimientos necesarios.</p>
+        <p>La Clínica cuenta con médicos veterinarios especialistas en pequeños animales y exóticos, ofreciendo
+          servicios especializados en las diferentes áreas de la cirugía, con equipo de anestesia inhalatoria y
+          monitorización, internistas, análisis clínicos, radiología digital, ecografía, oftalmología, cardiología,
+          odontología...</p>
+        <p>Por eso, podemos ofrecerles una amplia variedad de servicios con los que resolver y prevenir cualquier
+          problema relacionado con su mascota.</p>
+
+
+        <h2>SERVICIOS <b style="color:chartreuse">VETERINARIOS</b></h2>
+        <p>Estos son algunos de los servicios que ofrecemos en nuestra clínica, puede encontrar todos nuestras
+          especialidades en la sección de servicios veterinarios.</p>
+      </div>
+
+      <div><img src="imagen/horario.png" alt="local-veterinario" id="imagenHorario"></div>
+    </div>
+
+  </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+      }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+      });
+    });
+  </script>
+
+</body>
+
+</html>

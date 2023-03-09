@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../xampp/htdocs/DES"
+		},
+		{
+			"path": "../EntornoCliente"
+		},
+		{
+			"path": "../../../../../xampp/htdocs/copiaDES/DesarrolloEntornoServidor_2223-main"
+		},
+		{
+			"path": "../Despliegue/mmedcel"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Interfaces"
+	}
+}

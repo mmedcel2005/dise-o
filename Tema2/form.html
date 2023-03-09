@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formStyle.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="contact-form">
+        <div>
+            <h1>Sube tu articulo</h1> 
+            <h4>Aporta todo lo necesario para poder poner tu articulo en venta</h4> 
+        </div>
+
+        <form action="">
+
+            <div class="mb-3">
+              <span class="required">Nombre del articulo:</span>
+              <input type="text" name="nombre" id="nombre" placeholder="Introduce el nombre">
+            </div>
+
+            <div class="mb-3">
+                <span class="required">Descripcion:</span>
+              <textarea class="form-control" name="descripcion" id="descripcion" rows="3" placeholder="Introduce una descripcion"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <span class="required">Precio:</span>
+                <input type="text" name="precio" id="precio" placeholder="Introduce el precio">
+              </div>
+
+            <span class="required">Selecciona las imagenes</span>
+            <input type=file multiple>
+
+            <div class="mb-3">
+                <span class="required">Fecha de alta</span>
+                <input class="form-control" id="alta" name="alta" placeholder="MM/DD/YYYY" type="date"/>
+              </div>
+              <div class="mb-3">
+                <span class="required">Fecha de expiracion</span>
+                <input class="form-control" id="expiracion" name="expiracion" placeholder="MM/DD/YYYY" type="date"/>
+              </div>
+              <div class="mb-3">
+                <span class="required">Fecha de fabricacion</span>
+                <input class="form-control" id="fabricacion" name="fabricacion" placeholder="YYYY" type="date"/>
+              </div>
+
+              <div class="mb-3">
+                <span class="required">Observaciones:</span>
+              <textarea class="form-control" name="" id="" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <span class="required">Forma de envio:</span>
+                <select class="form-select form-select-lg" name="envio" id="envio">
+                    <option selected>Selecciona una opcion</option>
+                    <option value="gratis">Envio gratis</option>
+                    <option value="express">Correos express</option>
+                    <option value="DHL">DHL</option>
+                </select>
+            </div>
+
+            <button name="submit" type="submit" id="submit" >Enviar</button> 
+        </form>
+            
+    
+        
+    
+        </div>
+</body>
+</html>

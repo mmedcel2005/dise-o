@@ -1,0 +1,26 @@
+.contenedor {
+    background: grey;
+    height: 400px;
+    width: 800px;
+    display: flex;
+}
+
+.elemento{
+    height: 50px;
+    width: 80px;
+    color:white;
+    font-size:30px;
+     }
+    .elem1{
+    background: coral;
+    flex-grow:1;
+    }
+    .elem2{
+    background: green;
+    flex-grow:1;
+    }
+    .elem3{
+    background: coral;
+    flex-grow:1;
+    }
+    
