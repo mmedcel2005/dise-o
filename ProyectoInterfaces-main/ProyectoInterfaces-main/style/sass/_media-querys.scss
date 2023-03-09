@@ -1,0 +1,154 @@
+/* Pantalla de ordenador */
+@media (min-width: 1024px) {
+    nav div {
+        margin-left: 2em !important;
+    }
+
+    .dropdown-item {
+        margin-left: 0px !important;
+    }
+
+    .nav-link {
+        margin-left: 2em !important;
+    }
+
+    #search_bar {
+        margin-left: 12em;
+    }
+
+    .carousel-control-prev {
+        margin-left: 20%;
+    }
+
+    .carousel-control-next {
+        margin-right: 20%;
+    }
+}
+
+/* Pantalla de tablet */
+@media (max-width: 1180px) {
+    #search_bar {
+        width: 6em;
+    }
+
+    header video {
+        max-height: 355px !important;
+    }
+
+    header img {
+        max-height: 355px !important;
+    }
+
+    .featured {
+        max-width: 60%;
+    }
+
+    .catalog_item {
+        width: 15em;
+        height: 17em;
+    }
+
+    
+
+    /* Pantalla de móvil */
+    @media (max-width: 416px) {
+        #search_bar {
+            width: 6em;
+        }
+
+        header video {
+            max-height: 162px !important;
+        }
+
+        header img {
+            max-height: 162px !important;
+        }
+
+        #sections-main .menu img {
+            width: 2.2em;
+        }
+
+        #sections-main .menu h5 {
+            font-size: 10px;
+        }
+
+        main h1 {
+            font-size: 2em;
+        }
+
+        .featured {
+            max-width: 60%;
+            max-height: 10em;
+        }
+
+        .featured_text {
+            text-align: left;
+        }
+
+        .featured_img {
+            max-height: 10em;
+        }
+
+        .featured_img img {
+            max-height: 9em;
+        }
+
+        .featured_decoration {
+            width: 100%;
+            height: 2.5em;
+        }
+
+        .featured_title {
+            margin: 0.3rem 0 0.5rem 1rem;
+            font-size: small;
+        }
+
+        .featured_prize {
+            font-size: 1.5em;
+            margin-bottom: 0px;
+            margin-left: 10px;
+        }
+
+        .featured_button {
+            width: 60px;
+            height: 2em;
+            font-size: 9px;
+            margin-bottom: 6px;
+            margin-left: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-image: url(../rsc/bodycover.jpg);
+            background-size: 22px;
+        }
+
+        .catalog_container {
+            display: flex;
+            gap: 5px;
+            max-width: 80% !important;
+            max-height: 16.5em !important;
+        }
+
+        .catalog_item {
+            border-radius: 10px;
+            width: 8em;
+            height: 10em;
+        }
+
+        .details{
+            font-size: 1.5em;
+        }
+
+        .catalog_button {
+            font-size: 15px;
+        }
+
+        footer {
+            font-size: small;
+        }
+    }
+}

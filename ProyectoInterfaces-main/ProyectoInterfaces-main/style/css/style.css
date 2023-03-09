@@ -1,0 +1,501 @@
+@charset "UTF-8";
+/* Sass resources*/
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css";
+@font-face {
+  font-family: "jimyreid";
+  src: url("../../rsc/sex_pistols/Sex_Pistols.ttf");
+}
+@font-face {
+  font-family: "deftones";
+  src: url("../../rsc/deftone-stylus/deftone stylus.ttf");
+}
+@font-face {
+  font-family: "deftones";
+  src: url("../rsc/deftone-stylus/deftone stylus.ttf");
+}
+/*Edición bootstrap (Cambiado el color del danger básico por otro tono, usado en los botones del footer*/
+/* Catálogo */
+.catalog_container {
+  display: flex;
+  max-width: 80% !important;
+  max-height: 60em !important;
+  border-radius: 20px;
+  margin: 2em;
+  padding: 1em 0;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.catalog_item {
+  background-color: white;
+  width: 18em;
+  height: 18em;
+  box-shadow: 0 5px 30px -12px rgb(0, 0, 0);
+  border-radius: 50px;
+}
+
+.catalog_item {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog_item:before,
+.catalog_item:after {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.catalog_button {
+  z-index: 4;
+  display: none;
+  font-size: 1.5em;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  border: none;
+  box-shadow: 2px 1px 30px 2px rgba(0, 0, 0, 0.5);
+}
+
+.catalog_button:hover {
+  color: rgb(177, 20, 20);
+  border-color: rgb(177, 20, 20);
+  box-shadow: 0px 5px 10px 0px rgb(135, 15, 15);
+}
+
+.catalog_item:hover .catalog_button {
+  display: inline;
+}
+
+.catalog_item:not(:hover) .imgBx {
+  bottom: 80px;
+}
+
+.catalog_item .details {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 60px;
+  text-align: center;
+}
+.catalog_item .details h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  text-transform: uppercase;
+}
+.catalog_item .details div {
+  display: flex;
+  justify-content: center;
+}
+.catalog_item .details span {
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(177, 20, 20);
+  display: block;
+  margin-top: 5px;
+  z-index: 4;
+}
+.catalog_item .imgBx {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: 80px;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  transition: all 0.5s linear;
+  z-index: 1;
+  background-image: url(../../rsc/bodycover.jpg);
+  background-size: 350px;
+  background-position: right;
+}
+.catalog_item .imgBx img {
+  z-index: 1;
+  height: 100%;
+}
+
+.catalog_item:hover .details div {
+  justify-content: space-around;
+}
+
+.catalog_item:hover .details span {
+  display: none;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: url(../../rsc/bodycover.jpg);
+  background-size: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(135, 15, 15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(177, 20, 20);
+}
+
+/*Navbar y Offcanva*/
+#offcanvas ul {
+  list-style: none;
+}
+
+#offcanvas h1 {
+  text-align: center;
+}
+
+#offcanvas form {
+  justify-content: center;
+}
+
+nav a {
+  color: rgb(177, 20, 20) !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.icon {
+  background-color: white;
+  padding: 17px;
+  width: 20px;
+  margin: 1px 2px;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  opacity: 0.4;
+  background-color: rgb(177, 20, 20);
+}
+
+#guitar_icon {
+  background-size: contain;
+  background-position: center;
+  background-image: url(https://static.thenounproject.com/png/106416-200.png);
+}
+
+#cart_icon {
+  margin-right: 45px;
+  background-size: contain;
+  background-position: center;
+  background-image: url(https://static.thenounproject.com/png/5641-200.png);
+}
+
+#user_icon {
+  background-size: contain;
+  background-position: center;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png);
+}
+
+.reproductor {
+  margin-top: 4.5px;
+  margin-bottom: inherit;
+  clear: left;
+}
+
+.reproductor button {
+  color: rgb(177, 20, 20);
+  border-color: rgb(177, 20, 20);
+}
+
+.reproductor button:hover {
+  color: rgb(177, 20, 20);
+  border-color: rgb(177, 20, 20);
+  background-color: gray;
+}
+
+/*<---------Header---------->*/
+/* Carrusel */
+header img {
+  max-height: 29em !important;
+}
+header video {
+  max-height: 29em !important;
+  background-color: black;
+}
+
+#logo-slide img {
+  background-color: aliceblue;
+  width: 15em;
+  opacity: 0.5;
+}
+
+#caption-slide {
+  font-family: "deftones", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  margin-top: 1em !important;
+  font-family: "jimyreid", "Courier New", Courier, monospace;
+}
+
+/* <------------ Main -----------> */
+h5 {
+  font-family: "deftones", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(135, 15, 15);
+}
+
+main ul {
+  list-style: none;
+}
+main a {
+  text-decoration: none;
+}
+
+/* Secciones */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.menu img {
+  width: 6em;
+}
+.menu a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.menu a span {
+  transition: transform 0.2s ease-out;
+}
+.menu a span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+.menu a span:first-child {
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu a:hover span:first-child {
+  transform: translateY(100%);
+}
+.menu a:hover span:last-child,
+.menu a:hover .menu[data-animation] a:hover span:last-child {
+  transform: none;
+}
+
+.menu a:hover .menu[data-animation=to-right] a span:last-child {
+  transform: translateX(-100%);
+}
+
+.menu[data-animation=to-right] a:hover span:first-child {
+  transform: translateX(100%);
+}
+
+/* Destacados */
+.featured {
+  max-width: 40%;
+  box-shadow: 0 5px 30px -12px rgb(0, 0, 0);
+  border-radius: 50px;
+  margin: 2%;
+}
+
+.featured_img {
+  display: flex;
+  justify-content: space-around;
+  height: 21em;
+  border-radius: 50px 0 0 50px;
+  background-image: url(../../rsc/bodycover.jpg);
+  background-size: 350px;
+  background-position: right;
+}
+.featured_img img {
+  max-height: 20em;
+  max-width: 18.5em;
+}
+
+.featured_text {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  text-align: right;
+}
+
+.featured_decoration {
+  width: 100%;
+  height: 4em;
+  border-radius: 0 50px 0 0;
+  background-size: cover;
+  background-position: left;
+  background-image: url(https://wallpapercave.com/wp/VEe7Pk8.jpg);
+}
+
+.featured_title {
+  text-align: center;
+  margin: 2.5rem 2rem 1rem 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.featured_prize {
+  color: rgb(135, 15, 15);
+  padding-right: 15%;
+}
+
+.featured_button {
+  background-color: white;
+  margin-right: 15%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.featured_button:hover {
+  font-family: "deftones";
+  color: rgb(177, 20, 20);
+  border-color: rgb(177, 20, 20);
+  box-shadow: 0px 5px 10px 0px rgb(135, 15, 15);
+}
+
+#featured-carousel .carousel-control-prev,
+#featured-carousel .carousel-control-next {
+  border-bottom: 0;
+  font-size: 3em;
+  color: rgb(177, 20, 20);
+}
+
+/* <------------- Configuracion de Responsividad ----------------> */
+/* Pantalla de ordenador */
+@media (min-width: 1024px) {
+  nav div {
+    margin-left: 2em !important;
+  }
+  .dropdown-item {
+    margin-left: 0px !important;
+  }
+  .nav-link {
+    margin-left: 2em !important;
+  }
+  #search_bar {
+    margin-left: 12em;
+  }
+  .carousel-control-prev {
+    margin-left: 20%;
+  }
+  .carousel-control-next {
+    margin-right: 20%;
+  }
+}
+/* Pantalla de tablet */
+@media (max-width: 1180px) {
+  #search_bar {
+    width: 6em;
+  }
+  header video {
+    max-height: 355px !important;
+  }
+  header img {
+    max-height: 355px !important;
+  }
+  .featured {
+    max-width: 60%;
+  }
+  .catalog_item {
+    width: 15em;
+    height: 17em;
+  }
+  /* Pantalla de móvil */
+}
+@media (max-width: 1180px) and (max-width: 416px) {
+  #search_bar {
+    width: 6em;
+  }
+  header video {
+    max-height: 162px !important;
+  }
+  header img {
+    max-height: 162px !important;
+  }
+  #sections-main .menu img {
+    width: 2.2em;
+  }
+  #sections-main .menu h5 {
+    font-size: 10px;
+  }
+  main h1 {
+    font-size: 2em;
+  }
+  .featured {
+    max-width: 60%;
+    max-height: 10em;
+  }
+  .featured_text {
+    text-align: left;
+  }
+  .featured_img {
+    max-height: 10em;
+  }
+  .featured_img img {
+    max-height: 9em;
+  }
+  .featured_decoration {
+    width: 100%;
+    height: 2.5em;
+  }
+  .featured_title {
+    margin: 0.3rem 0 0.5rem 1rem;
+    font-size: small;
+  }
+  .featured_prize {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+  .featured_button {
+    width: 60px;
+    height: 2em;
+    font-size: 9px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-image: url(../rsc/bodycover.jpg);
+    background-size: 22px;
+  }
+  .catalog_container {
+    display: flex;
+    gap: 5px;
+    max-width: 80% !important;
+    max-height: 16.5em !important;
+  }
+  .catalog_item {
+    border-radius: 10px;
+    width: 8em;
+    height: 10em;
+  }
+  .details {
+    font-size: 1.5em;
+  }
+  .catalog_button {
+    font-size: 15px;
+  }
+  footer {
+    font-size: small;
+  }
+}/*# sourceMappingURL=style.css.map */

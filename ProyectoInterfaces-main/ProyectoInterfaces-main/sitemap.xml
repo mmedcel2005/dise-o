@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="Interfaces/Proyecto/ProyectoInterfaces/index.html">
+
+   <url>
+
+      <loc>Interfaces/Proyecto/ProyectoInterfaces/index.html</loc>
+
+      <lastmod>2005-01-01</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>Interfaces/Proyecto/ProyectoInterfaces/catalog.html</loc>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>Interfaces/Proyecto/ProyectoInterfaces/form.html</loc>
+
+      <lastmod>2004-12-23</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>Interfaces/Proyecto/ProyectoInterfaces/product.html</loc>
+
+      <lastmod>2004-12-23T18:00:15+00:00</lastmod>
+
+      <priority>0.3</priority>
+
+   </url>
+
+   <url>
+
+      <loc>Interfaces/Proyecto/ProyectoInterfaces/cart.html</loc>
+
+      <lastmod>2004-11-23</lastmod>
+
+   </url>
+
+</urlset>

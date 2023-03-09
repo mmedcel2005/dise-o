@@ -1,0 +1,123 @@
+.catalog_container {
+    display: flex;
+    max-width: 80% !important;
+    max-height: 60em !important;
+    border-radius: 20px;
+    margin: 2em;
+    padding: 1em 0;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.catalog_item {
+    background-color: white;
+    width: 18em;
+    height: 18em;
+    box-shadow: 0 5px 30px -12px rgba(0, 0, 0, 1);
+    border-radius: 50px;
+}
+
+.catalog_item {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.catalog_item:before,
+.catalog_item:after {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+    z-index: 1;
+
+}
+
+.catalog_button {
+    z-index: 4;
+    display: none;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 2px 1px 30px 2px rgba(0, 0, 0, 0.5);
+}
+
+.catalog_button:hover {
+    color: $light-red;
+    border-color: $light-red;
+    box-shadow: 0px 5px 10px 0px $dark-red;
+}
+
+.catalog_item:hover .catalog_button {
+    display: inline;
+}
+.catalog_item:not(:hover) .imgBx {
+    bottom: 80px;
+}
+
+.catalog_item{
+    .details {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        height: 60px;
+        text-align: center;
+        h2{
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            text-transform: uppercase;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        span {
+            font-weight: bold;
+            font-size: 22px;
+            color: $light-red;
+            display: block;
+            margin-top: 5px;
+            z-index: 4;
+        }
+    }
+
+    .imgBx {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 80px;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        transition: all 0.5s linear;
+        z-index: 1;
+        @include square-background;
+
+        img {
+            z-index: 1;
+            height: 100%;
+        }
+    }
+} 
+
+.catalog_item:hover .details div{
+    justify-content: space-around;
+}
+
+.catalog_item:hover .details span {
+    display: none;
+}

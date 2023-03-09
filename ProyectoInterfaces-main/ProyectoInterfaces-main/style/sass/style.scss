@@ -1,0 +1,196 @@
+/* Sass resources*/
+
+@import '_vars.scss';
+
+/* Catálogo */
+
+@import '_catalog.scss';
+
+/* Scroll */
+
+@import '_scroll.scss';
+
+/*Navbar y Offcanva*/
+
+@import '_nav.scss';
+
+/*<---------Header---------->*/
+
+/* Carrusel */
+
+header {
+    img {
+        max-height: 29em !important;
+    }
+
+    video {
+        max-height: 29em !important;
+        background-color: black;
+    }
+}
+
+#logo-slide img {
+    background-color: aliceblue;
+    width: 15em;
+    opacity: 0.5;
+}
+
+#caption-slide {
+    font-family: $deftones;
+}
+
+h1 {
+    margin-top: 1em !important;
+    font-family: $jimmireid;
+}
+
+/* <------------ Main -----------> */
+
+h5 {
+    font-family: 'deftones', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $dark-red;
+}
+
+main {
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+/* Secciones */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    img {
+        width: 6em;
+    }
+
+    a {
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+        span {
+            transition: transform 0.2s ease-out;
+        }
+
+        span:last-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-100%);
+        }
+
+        span:first-child {
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+
+
+}
+
+.menu a:hover {
+    span:first-child {
+        transform: translateY(100%);
+    }
+
+    span:last-child,
+    .menu[data-animation] a:hover span:last-child {
+        transform: none;
+    }
+
+}
+
+.menu a:hover .menu[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+}
+
+.menu[data-animation="to-right"] a:hover span:first-child {
+    transform: translateX(100%);
+}
+
+/* Destacados */
+
+.featured {
+    max-width: 40%;
+    box-shadow: 0 5px 30px -12px rgba(0, 0, 0, 1);
+    border-radius: 50px;
+    margin: 2%;
+}
+
+.featured_img {
+    display: flex;
+    justify-content: space-around;
+    height: 21em;
+    border-radius: 50px 0 0 50px;
+    @include square-background;
+
+    img {
+        max-height: 20em;
+        max-width: 18.5em;
+    }
+}
+
+.featured_text {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    text-align: right;
+}
+
+
+.featured_decoration {
+    width: 100%;
+    height: 4em;
+    border-radius: 0 50px 0 0;
+    background-size: cover;
+    background-position: left;
+    background-image: url(https://wallpapercave.com/wp/VEe7Pk8.jpg);
+}
+
+.featured_title {
+    text-align: center;
+    margin: 2.5rem 2rem 1rem 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.featured_prize {
+    color: $dark-red;
+    padding-right: 15%;
+}
+
+.featured_button {
+    background-color: white;
+    margin-right: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.featured_button:hover {
+    font-family: 'deftones';
+    color: $light-red;
+    border-color: $light-red;
+    box-shadow: 0px 5px 10px 0px $dark-red;
+}
+
+#featured-carousel .carousel-control-prev,
+#featured-carousel .carousel-control-next {
+    border-bottom: 0;
+    font-size: 3em;
+    color: $light-red;
+}
+
+/* <------------- Configuracion de Responsividad ----------------> */
+
+@import '_media-querys.scss';
